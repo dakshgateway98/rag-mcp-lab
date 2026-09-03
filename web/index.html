@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RAG techniques vs MCP</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header>
+      <p class="kicker">Interview lab</p>
+      <h1>RAG techniques vs MCP</h1>
+      <p class="lede">
+        Same corpus, same question, different retrievers. MCP is the tool protocol — not another chunking trick.
+      </p>
+    </header>
+
+    <nav>
+      <button data-tab="rag" class="active">RAG comparison</button>
+      <button data-tab="mcp">MCP implementation</button>
+    </nav>
+
+    <section id="rag" class="panel active">
+      <form id="compare-form">
+        <label for="query">Query</label>
+        <div class="row">
+          <input id="query" value="When should I use MCP instead of RAG?" />
+          <button type="submit">Compare</button>
+        </div>
+      </form>
+      <div id="catalog" class="cards"></div>
+      <div id="runs" class="runs"></div>
+    </section>
+
+    <section id="mcp" class="panel">
+      <article id="mcp-copy"></article>
+    </section>
+
+    <footer>
+      Hybrid search and rerank come from the Agentic_AI lab. This repo adds technique comparison and an MCP server.
+    </footer>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+  --bg: #121418;
+  --panel: #1c2028;
+  --ink: #e8e6df;
+  --muted: #9aa3ad;
+  --line: #2c3340;
+  --accent: #c9842a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 32px 20px 64px;
+  font: 16px/1.5 "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+.kicker { letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-size: 12px; }
+h1 { font-size: 2rem; margin: 8px 0; font-weight: 650; }
+.lede { color: var(--muted); max-width: 42rem; }
+nav { display: flex; gap: 8px; margin: 24px 0; }
+nav button, form button {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 8px 14px;
+  cursor: pointer;
+}
+nav button.active, form button { background: var(--accent); color: #111; border-color: var(--accent); }
+.panel { display: none; }
+.panel.active { display: block; }
+label { display: block; color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+.row { display: flex; gap: 8px; }
+input {
+  flex: 1;
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+}
+.cards, .runs { display: grid; gap: 12px; margin-top: 20px; }
+.cards { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.card, .run {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 14px;
+}
+.card h3, .run h3 { margin: 0 0 8px; font-size: 1rem; }
+.meta { color: var(--muted); font-size: 13px; }
+.chip { display: inline-block; margin-right: 6px; color: var(--accent); font-size: 12px; }
+footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+article pre { white-space: pre-wrap; background: var(--panel); padding: 16px; border: 1px solid var(--line); }

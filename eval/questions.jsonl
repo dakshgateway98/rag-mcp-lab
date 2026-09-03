@@ -1,0 +1,5 @@
+{"query": "What is machine learning?", "relevant_doc_ids": ["doc_ml"]}
+{"query": "How do transformers work?", "relevant_doc_ids": ["doc_transformers"]}
+{"query": "What is hybrid RAG?", "relevant_doc_ids": ["doc_hybrid_rag", "doc_naive_rag"]}
+{"query": "Explain Model Context Protocol tools", "relevant_doc_ids": ["doc_mcp", "doc_mcp_tools"]}
+{"query": "When should I use MCP instead of RAG?", "relevant_doc_ids": ["doc_mcp_vs_rag", "doc_mcp"]}
